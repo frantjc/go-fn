@@ -8,7 +8,7 @@ package fn
 //
 // If start<0, it is treated as distance from the end of the array.
 // If end<=0, it is treated as distance from the end of the array.
-func Slice[T any](in []T, start, end int) []T {
+func Slice[T any](in []T, start, end int) AnyArray[T] {
 	if start > end {
 		return make([]T, 0)
 	}
