@@ -4,7 +4,7 @@ package fn
 // mimic the JavaScript array reduce functions.
 //
 // T1 represents the type of the array, while T2 represents the
-// type of the array intended to be mapped to
+// type of the array intended to be mapped to.
 type ReducibleArray[T1, T2 any] AnyArray[T1]
 
 // Map creates a new array populated with the results of

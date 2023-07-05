@@ -9,5 +9,5 @@ func Find[T any](in []T, f func(T, int) bool) T {
 			return a
 		}
 	}
-	return *new(T) //nolint:gocritic
+	return *new(T)
 }

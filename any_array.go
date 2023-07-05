@@ -18,7 +18,7 @@ func (a AnyArray[T]) Filter(f func(T, int) bool) AnyArray[T] {
 
 // FindIndex returns the index of the first element in the array
 // that satisfies the provided testing function. Otherwise, it returns -1,
-// indicating that no element passed the test
+// indicating that no element passed the test.
 func (a AnyArray[T]) FindIndex(f func(T, int) bool) int {
 	return FindIndex(a, f)
 }
@@ -31,7 +31,7 @@ func (a AnyArray[T]) Find(f func(T, int) bool) T {
 }
 
 // ForEach executes a provided function once
-// for each array element
+// for each array element.
 func (a AnyArray[T]) ForEach(f func(T, int)) {
 	ForEach(a, f)
 }

@@ -1,7 +1,7 @@
 package fn
 
 func Coalesce[T comparable](ts ...T) T {
-	empty := *new(T) //nolint:gocritic
+	empty := *new(T)
 	for _, t := range ts {
 		if t != empty {
 			return t
